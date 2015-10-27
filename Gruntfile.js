@@ -43,7 +43,9 @@ module.exports = function(grunt) {
 	]);
 
 	// default option to connect server
-	grunt.registerTask('serve', [
+	grunt.registerTask('default', [
+		'startMongo',
+		'open',
 		'jshint',
 		'concurrent:dev'
 	]);
